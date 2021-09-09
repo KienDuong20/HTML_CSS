@@ -305,6 +305,13 @@ html {
     background-color: rgb(153, 148, 148);
 }
 
+.copy-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #ddd;
+}
+
 
 
 
