@@ -153,15 +153,19 @@ html {
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
+    padding-right: 5px;
 }
 .right-item-img {
     width: 100%;
+    padding-left: 11px;
+    cursor: pointer;
 }
 
 .first-content-item-desc-left {
     width: 50%;
     float: right;
     padding: 30px 0 0 10px;
+    cursor: pointer;
 
 }
 
@@ -176,15 +180,16 @@ html {
 
 .sub-content-right {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
 }
 
 .sub-content-right-title {
-    padding: 10px;
+    padding-left: 20px;
     color: rgb(0, 0, 0);
     font-weight: 900;
-    font-size: 7vh;
+    font-size: 8vh;
     font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
 }
 
 
@@ -196,20 +201,109 @@ html {
 
 .second-content-list .second-content-item img {
     width: 100%;
+    cursor: pointer;
 }
 
 .second-content-item h3 {
     margin: 20px 0;
+    cursor: pointer;
 }
 
 .add {
     padding-top: 20px;
 }
+/* pagination */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagina {
+    text-align: center;
+    margin-top: 20px;
+}
+
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+/* end-pagi */
+
+/* footer */
+
+.footer {
+    height: 143px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2A2A2A;
+    position: relative;
+    /* line-height: 143px; */
+}
+
+.footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 50px 0 38px;
+}
+
+.footer-icon:hover {
+    background-color: #c70101;
+}
+
+.footer li  a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+    background-color:#3F3F3F;
+    border-radius: 50%;
+    line-height: 37px;
+}
+
+.footer-exact {
+    margin-left: 20px;
+}
 
 
 
+.footer-exact a {
+    padding: 10px 25px;
+    height: 50px;
+    width: 50px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    font-weight: 500;
+}
 
-
+.footer-exact a:hover {
+    background-color: rgb(153, 148, 148);
+}
 
 
 
