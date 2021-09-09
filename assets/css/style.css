@@ -180,12 +180,12 @@ html {
 
 .sub-content-right {
     position: absolute;
-    bottom: 10px;
+    bottom: -2px;
 }
 
 .sub-content-right-title {
     padding-left: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
     font-weight: 900;
     font-size: 8vh;
     font-family: 'Bebas Neue', cursive;
