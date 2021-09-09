@@ -308,8 +308,38 @@ html {
 .copy-right {
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
     color: #ddd;
+}
+
+.sub-footer {
+    height: 44px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-footer p {
+    color: #ddd;
+    line-height: 44px;
+    font-size: 13px;
+}
+
+.sub-footer ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.sub-footer ul li:hover {
+   text-decoration: underline;
+}
+
+.sub-footer ul li a {
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    margin-left: 29px;
 }
 
 
