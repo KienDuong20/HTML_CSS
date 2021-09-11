@@ -177,6 +177,10 @@ html {
     justify-content: space-between;
 }
 
+.shirt-item {
+    padding: 0 20px;
+}
+
 .shirt-img {
     cursor: pointer;
     padding: 45px; 
@@ -299,11 +303,18 @@ html {
     margin-bottom: 20px;
     cursor: pointer;
 }
+.li-sign-up:hover{
+    background-color: rgb(68, 68, 68);
+}
 
 .follow-us-text{
 
     color: #252424;
     font-weight: 700;
+}
+
+.follow-us-text:hover{
+    text-decoration: underline;
 }
 
 .social li {
