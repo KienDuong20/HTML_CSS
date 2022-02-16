@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.win {
+    background-color: #0F8723;
+}
+
+.lose {
+    background-color: #c70101;
+}
+
+.dd {
+    background-color: #707070;
+}
+
+.clear {
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+.logo-man {
+    position: absolute;
+    display: inline-block;
+    padding: 7px 21px;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    height: 74x;
+    background-color: #c70101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+ .left-nav {
+    display: inline-block; 
+    position: relative;
+    margin-left: 100px;
+}
+
+.left-nav, .subnav {
+    list-style-type: none;
+}
+
+.left-nav > li {
+    display: inline-block;
+}
+
+.left-nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+} 
+
+.left-nav li a {
+    text-decoration: none;
+    line-height: 74px;
+    display: block;
+    padding: 0 6px;
+}
+
+.left-nav .subnav {
+    top: 100%;
+    background-color: #c70101;
+    min-width: 150px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position:absolute;
+}
+
+.left-nav .subnav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+
+.left-nav .subnav li:hover a, 
+.left-nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+.left-nav li:hover .subnav {
+    display: block
+}
+
+.left-nav .nav-arrow-down {
+    font-size: 13px
+}
+
+/* Nav-right */
+
+.right-nav-login {
+    float: right;
+    display: flex;
+    line-height: 74px;
+}
+.right-nav-login li {
+    padding: 0 20px;
+    list-style: none;
+    display: inline-block;
+
+}
+.right-nav-login li a, .right-nav-login li i {
+    color: rgb(247, 242, 242);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .right-nav-login li:hover, .right-nav-login li:hover{
+     background-color: #ccc; 
+} */
+
+.right-nav-login li:hover a, .right-nav-login li:hover i{
+    color: black;
+}
+
+/* 
+Content */
+
+.content {
+    width: 1262px;
+    margin-top: 74px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+}
+
+/* .content-second-header {
+    background-color: rgb(231, 226, 226);
+} */
+
+.second-header {
+    height: 80px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.second-header li {
+    display: inline-block;
+    line-height: 80px;
+    padding-right: 27px;
+}
+
+.second-header li a {
+    text-decoration: none;
+    color: #6E6E6E;
+    font-weight: 500;
+}
+
+.second-header-focus {
+    border-bottom: 5px solid #c70101;
+}
+
+.second-header-nofocus:hover {
+    border-bottom: 5px solid #ccc;
+}
+/* total content */
+
+.left-content {
+    padding-right: 25px;
+    position: relative;
+    float: left;
+    width: 65%;
+}
+
+.right-content {
+    padding-left: 25px;
+    float: left;
+    width: 35%;
+}
+
+/* total content */
+
+
+.third-header {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.third-header > li {
+    position: relative;
+    padding-left: 15px;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+}
+
+.third-header  li {
+    position: relative;
+}
+
+.third-nav-arrow-down {
+    padding-left: 40px;
+}
+
+.third-header li {
+    list-style-type: none;
+    background-color: rgb(36, 34, 34);
+}
+
+.third-header li:hover .third-header-subnav{
+    display: block;
+}
+
+.img-logoPR {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+
+.third-header li a {
+    line-height: 40px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.men {
+    font-weight: 600;
+}
+
+.third-header-subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.third-header-subnav li{
+    min-width: 120px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.third-header-subnav li a{
+    color: black;
+    background-color: white;
+}
+
+.third-header-subnav li a:hover{
+    background-color: #ccc;
+}
+
+
+/*table */
+
+.table{
+    margin-top: 27px;
+}
+
+.th-center {
+    text-align: center;
+    width: 10%;
+}
+
+.th-left {
+    float: left;
+    padding-top: 1px;
+}
+
+.percent5 {
+    width: 5%;
+    font-size: 13px;
+}
+
+.percent25 {
+    font-size: 13px;
+    width: 25%;
+}
+
+.logo-clb {
+    margin-right: 5px;
+}
+
+
+.table-result {
+    list-style-type: none;
+}
+
+.table-result li{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.table-result li span{
+    line-height: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+.icon-table {
+    border-radius: 50%;
+}
+
+.table-item {
+    height: 45px;
+}
+
+td {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
+}
+
+.table-item td div {
+    text-align: auto;
+    float: left;
+    /* height: 26px;
+    width: 26px; */
+}
+
+.table-result {
+    text-align: auto;
+    float: left;
+    padding-left: 40px;
+}
+
+/* right - result */
+
+.result-date {
+    margin-top: 10px;
+    text-align: center;
+    /* font-size: auto; */
+    font-size: 15px;
+    opacity: 70%;
+}
+
+.result-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-content-result hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-logo-youngboy, .result-logo-mu{
+    text-align: center;
+}
+
+.result-desc h1 {
+    width: 97px;
+    line-height: 97px;
+    text-align: center;
+}
+
+.result-desc h1 {
+    text-transform: uppercase;
+}
+
+
+
+.schedule {
+    margin-top: 25px;
+}
+
+.schedule-match {
+    list-style-type: none;
+    text-align: center;
+}
+
+.schedule-match li {
+    display: inline-block;
+}
+
+.schedule-match li img{
+    vertical-align: middle;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.schedule-match li p{
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #707070;
+    color: white;
+    border-radius: 2px; 
+}
+
+.schedule-stadium {
+    text-align: center;
+    font-size: 14px;
+    color: #231F20;
+    margin-top: 16px;
+    padding-left: 10px;
+}
+
+.seprate{
+    margin-top: 25px;
+    opacity: 30;
+}
+
+
+
+
+/* footer */
+
+.footer {
+    height: 143px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2A2A2A;
+    position: relative;
+    /* line-height: 143px; */
+}
+
+.footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 50px 0 38px;
+}
+
+.footer-icon:hover {
+    background-color: #c70101;
+}
+
+.footer li  a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+    background-color:#3F3F3F;
+    border-radius: 50%;
+    line-height: 37px;
+}
+
+.footer-exact {
+    margin-left: 20px;
+}
+
+
+
+.footer-exact a {
+    padding: 10px 25px;
+    height: 50px;
+    width: 50px;
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.footer-exact a:hover {
+    background-color: rgb(153, 148, 148);
+}
+
+.copy-right {
+    position: absolute;
+    right: 0;
+    /* bottom: 0; */
+    color: #ddd;
+}
+
+.sub-footer {
+    height: 44px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-footer p {
+    color: #ddd;
+    line-height: 44px;
+    font-size: 13px;
+}
+
+.sub-footer ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.sub-footer ul li:hover {
+   text-decoration: underline;
+}
+
+.sub-footer ul li a {
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    margin-left: 29px;
+}

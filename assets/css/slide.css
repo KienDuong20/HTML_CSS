@@ -14,9 +14,9 @@
 
 .text-description {
     padding: 0 20px;
-    font-size: 10vh;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bolder;
+    font-size: 7vh;
+    font-family: sans-serif;
+    font-weight: bold;
     color: rgb(209, 207, 207);
 }
 

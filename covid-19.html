@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/covid-19.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- end-font -->
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="header">
+            <a class="logo-man" href="index.html"><img src="./assets/img/News/Header-Logo1500994616801.png" alt="LOGO"
+                width="63" height="57"></a></span></li>
+      
+            <ul class="left-nav">
+              <li class="left-element"><a href="index.html">Tin Tức</a></li>
+              <li class="left-element"><a href="store.html">Cửa Hàng</a></li>
+              <li class="left-element"><a href="fixtures.html">Bảng Xếp Hạng</a></li>
+              <li class="left-element"><a href="highlight.html">Video</a></li>
+              <li class="left-element"><a href="stadium.html">Sân Vận Động</a></li>
+              <li class="left-element"><a href="tickets.html">Mua Vé</a></li>
+              <li class="left-element"><a href="covid-19.html">Covid-19</a></li>
+              <li class="left-element">
+                <a href="">
+                  Thêm
+                  <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                  <li><a href="">Cầu Thủ</a></li>
+                  <li><a href="">Qũy Từ Thiện</a></li>
+                  <li><a href="">Mạng Xã Hội</a></li>
+                  <li><a href="">Lịch Sử</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <ul class="right-nav-en">
+                                  <li><a href=""><i class="ti-world"></i></a></li>
+                                  <li><a href=""><p>EN</p></a></li>
+                              </ul> -->
+            <ul class="right-nav-login">
+              <li><i class="ti-world"></i> <a href=""><span>EN</span></a></li>
+      
+              <li><i class="ti-user"></i> <a href=""><span>LOGIN</span></a></li>
+      
+            </ul>
+          </div>
+
+        <div class="content">
+            <div class="second-nav">
+                <span>
+                    <a href="" style="text-decoration: none; cursor: pointer;">
+                        <p>FIFA</p>
+                    </a>
+                </span>
+            </div>
+            <div style="text-align: center;">
+                <ul class="third-nav-list">
+                    <li><a href="">Cuộc Thi</a></li>
+                    <li><a href="">FIFA</a></li>
+                    <li><a href="">Bóng Đá Nữ</a></li>
+                    <li><a href="">Xã Hội</a></li>
+                    <li><a href="">Bóng Đá Tương Lai</a></li>
+                    <li><a href="">Phát Triển Bóng Đá</a></li>
+                    <li><a href="">Kĩ Thuật</a></li>
+                    <li><a href="">Luật Pháp</a></li>
+                </ul>
+            </div>
+            <div class="slide1">
+                <div class="slide1-content">
+                    <p class="slide1-subtitle">Medical</p>
+                    <p class="slide1-title">Covid-19 Resource Center</p>
+                </div>
+            </div>
+
+            <div class="About-Covid">
+                <div class="recommend">
+                    <p class="recommend-title">
+                        Các khuyến nghị và hướng dẫn để giải quyết các vấn đề của Covid-19.
+                    </p>
+                    <p class="recommend-desc">
+                        Sức khỏe là ưu tiên hàng đầu và sẽ vẫn là ưu tiên của mọi người cho đến khi virus coronavirus bị đánh bại. Khi thế giới đang đối mặt với những thách thức mới, FIFA đã và đang hợp tác với Liên hợp quốc (LHQ) và Tổ chức Y tế Thế giới (WHO) để cung cấp hướng dẫn cho mọi người để bảo vệ sức khỏe và hạnh phúc của họ. Ngoài ra, FIFA cũng đã công bố một bộ khuyến nghị và hướng dẫn để giải quyết các vấn đề liên quan đến quy định bóng đá.
+                    </p>
+                </div>
+
+                <div class="chart">
+                    <p class="chart-desc">Trên toàn cầu, tính đến 5:20 chiều CEST, ngày 17 tháng 9 năm 2021, đã có 226.844.344 trường hợp được xác nhận nhiễm COVID-19, trong đó có 4.666.334 trường hợp tử vong, được báo cáo cho WHO.</p>
+                    <!-- <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+                    <script>
+                        var xArray = ["Total Cases", "Total Recoveries", "Deaths"];
+                        var yArray = [226844344, 204587058, 4666334];
+
+                        var data = [{
+                            x: xArray,
+                            y: yArray,
+                            type: "bar"
+                        }];
+
+                        var layout = { title: "Number of coronavirus (COVID-19) cases, recoveries, and deaths worldwide" };
+
+                        Plotly.newPlot("myPlot", data, layout);
+                    </script> -->
+                    <div class="charts">
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        <script>
+                            var xValues = ["Tổng Số Ca", "Tổng Số Ca Khỏi Bệnh", "Tử Vong",];
+                            var yValues = [226844344, 204587058, 4666334]; 
+                            var barColors = ["red", "blue","yellow"];
+                            
+                            new Chart("myChart", {
+                              type: "bar",
+                              data: {
+                                labels: xValues,
+                                datasets: [{
+                                  backgroundColor: barColors,
+                                  data: yValues
+                                }]
+                              },
+                              options: {
+                                legend: {display: false},
+                                title: {
+                                  display: true,
+                                  text: "Biểu Đồ Thống Kê"
+                                }
+                              }
+                            });
+                            </script>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="slide2">
+                <div class="slide2-content">
+                    <p class="slide2-subtitle">FIFA Cùng Chung Tay Chống Lại Dịch Bệnh Covid-19</p>
+                    <p class="slide2-title" style="margin-bottom:30px">FIFA đang hợp tác với Tổ chức Y tế Thế giới (WHO) để thúc đẩy nhu cầu tiếp cận công bằng với vắc xin, phương pháp điều trị và chẩn đoán COVID-19.</p>
+                    <span class="button"><a href=""><span class="slide2-read-more">Đọc Thêm</span></a></span>
+                </div>
+            </div>
+
+            <div class="content1">
+                <div class="resource-center">Trung Tâm Nghiên Cứu</div>
+
+                <div class="campaign1">
+                    <div class="campaign1-video">
+                        <iframe width="636" height="414" style=" padding-right: 15px;" src="https://www.youtube.com/embed/sXqipYUUk5s" frameborder="0"
+                            allowfullscreen></iframe>
+                        <p class="campaign-title">Trận Đấu Quốc Tế</p>
+                        <p class="campaign-desc">Sự trở lại của những trận đấu bóng đá quốc tế là kết quả của một quá trình tham vấn sâu rộng với sáu liên đoàn và đại diện các bên liên quan.</p>
+                        <span><a href="" class="campaign-button">Đọc Thêm</a></span>
+                    </div>
+
+                    <div class="campain1-text">
+                        <img src="./assets/img/Covid-19/content-img1.PNG" alt="" width="100%" style=" padding-left: 15px;">
+                        <p class="campaign-title" style="padding-left: 15px;">Chiến Dịch Ở Nhà #STAYATHOME</p>
+                        <p class="campaign-desc" style="padding-left: 15px;">
+                            FIFA đã hợp tác với Liên minh châu Phi, WHO và CAF để cùng giải quyết vấn đề bạo lực gia đình bằng cách phát động chiến dịch #SafeHome trên khắp lục địa châu Phi.
+                        </p>
+                        <span><a href="" class="campaign-button" style="padding-left: 15px;" >Đọc Thêm</a></span>
+                    </div>
+                </div>
+
+                <div class="campaign2" style = "margin-top: 40px;">
+                    <div class="campain2-text" style="padding-right: 15px;">
+                        <img src="./assets/img/Covid-19/content-img2.PNG" alt="" width="100%">
+                        <p class="campaign-title">COVID-19 Và Kế Hoạch</p>
+                        <p class="campaign-desc">
+                            Chủ tịch FIFA Gianni Infantino đã gửi một thông điệp động viên tới tất cả 211 hiệp hội thành viên của FIFA (MA) thông qua hội nghị truyền hình vào ngày hôm nay khi Đại hội FIFA được triệu tập từ xa lần đầu tiên.
+                        </p>
+                        <span><a href="" class="campaign-button" >Đọc Thêm</a></span>
+                    </div>
+
+                    <div class="campain2-text" style="padding-right: 15px;">
+                        <img src="./assets/img/Covid-19/content-img3.PNG" alt="" width="100%">
+                        <p class="campaign-title" >Quy Định Về Bóng Đá</p>
+                        <p class="campaign-desc">
+                            Sau sự cố gián đoạn chưa từng có do COVID-19 gây ra ở tất cả các cấp độ bóng đá, FIFA đã làm việc trên một loạt các khuyến nghị và hướng dẫn để giải quyết một số vấn đề thực tế chính phát sinh từ đại dịch.
+                        </p>
+                        <span><a href="" class="campaign-button">Đọc Thêm</a></span>
+                    </div>
+
+                    <div class="campain2-text" style="padding-right: 15px;">
+                        <img src="./assets/img/Covid-19/content-img4.PNG" alt="" width="100%">
+                        <p class="campaign-title">Chiến Dịch #STAYATHOME </p>
+                        <p class="campaign-desc">
+                            FIFA, Tổ chức Y tế Thế giới (WHO) và Ủy ban Châu Âu đã hợp lực khởi động chiến dịch #SafeHome nhằm hỗ trợ phụ nữ và trẻ em có nguy cơ bị bạo lực gia đình.
+                        </p>
+                        <span><a href="" class="campaign-button">Đọc Thêm</a></span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin-bottom: 15px;">
+
+        <div class="footer">
+            <ul style="list-style-type: none; padding-left: 96px;" >
+                <li><a href="" style="font-weight: 700; font-size:30px">Khám Phá</a></li>
+                <li><a href="">Cuộc Thi</a></li>
+                <li><a href="">FIFA</a></li>
+                <li><a href="">Bóng Đá Nữ</a></li>
+                <li><a href="">Xã Hội</a></li>
+                <li><a href="">Bóng Đá Tương Lai</a></li>
+                <li><a href="">Kĩ Thuật</a></li>
+                <li><a href="">Pháp Luật</a></li>
+                <li><a href="">FIFA & Xếp Hạng</a></li>
+
+                <ul class="social">
+                    <li style="background-color: #033b6e;"><a href=""><i class=" ti-facebook" style="color: white;"></i></a></li>
+                    <li style="background-color: #033b6e;"><a href=""><i class=" ti-twitter" style="color: white;"></i></a></li>
+                    <li style="background-color: #033b6e;"><a href=""><i class=" ti-instagram" style="color: white;"></i></a></li>
+                    <li style="background-color: #033b6e;"><a href=""><i class=" ti-youtube"style="color: white;" ></i></a></li>
+                </ul>
+
+            </ul>
+
+            <ul style="list-style-type: none; padding-left: 96px;">
+                <li><a href="" style="font-weight: 700; font-size:30px">Ghé Thăm</a></li>
+                <li><a href="">Câu Chuyện & Chủ Đề</a></li>
+                <li><a href="">Tài Liệu Chính Thức</a></li>
+                <li><a href="">Công Việc</a></li>
+                <li><a href="">Kết Nối</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

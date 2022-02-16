@@ -235,9 +235,9 @@ html {
     width: 100%;
 }
 
-.footer-flex {
+/* .footer-flex {
 
-}
+} */
 
 .customer, .worry, .information, .signup {
     padding: 30px 0;
@@ -374,11 +374,3 @@ html {
     color: white;
     margin-left: 29px;
 }
-
-
-
-
-
-
-
-

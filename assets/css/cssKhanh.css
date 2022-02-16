@@ -1,0 +1,119 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.logo-man {
+    position: absolute;
+    display: inline-block;
+    padding: 7px 21px;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    height: 74x;
+    background-color: #c70101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+ .left-nav {
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+}
+
+.left-nav, .subnav {
+    list-style-type: none;
+}
+
+.left-nav > li {
+    display: inline-block;
+}
+
+.left-nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+} 
+
+.left-nav li a {
+    text-decoration: none;
+    line-height: 74px;
+    display: block;
+    padding: 0 6px;
+}
+
+.left-nav .subnav {
+    top: 100%;
+    background-color: #c70101;
+    min-width: 150px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position:absolute;
+}
+
+.left-nav .subnav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+
+.left-nav .subnav li:hover a, 
+.left-nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+.left-nav li:hover .subnav {
+    display: block
+}
+
+.left-nav .nav-arrow-down {
+    font-size: 13px
+}
+
+/* Nav-right */
+
+.right-nav-login {
+    float: right;
+    display: flex;
+    line-height: 74px;
+}
+.right-nav-login li {
+    padding: 0 20px;
+    list-style: none;
+    display: inline-block;
+
+}
+.right-nav-login li a, .right-nav-login li i {
+    color: rgb(247, 242, 242);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .right-nav-login li:hover, .right-nav-login li:hover{
+     background-color: #ccc; 
+} */
+
+.right-nav-login li:hover a, .right-nav-login li:hover i{
+    color: black;
+}
+

@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+.logo-man {
+    position: absolute;
+    display: inline-block;
+    padding: 7px 21px;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    height: 74x;
+    background-color: #c70101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+ .left-nav {
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+}
+
+.left-nav, .subnav {
+    list-style-type: none;
+}
+
+.left-nav > li {
+    display: inline-block;
+}
+
+.left-nav > li > a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+} 
+
+.left-nav li a {
+    text-decoration: none;
+    line-height: 74px;
+    display: block;
+    padding: 0 6px;
+}
+
+.left-nav .subnav {
+    top: 100%;
+    background-color: #c70101;
+    min-width: 150px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.left-nav .subnav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+
+.left-nav .subnav li:hover a, 
+.left-nav > li:hover > a {
+    color: black;
+    background-color: #ccc;
+}
+
+.left-nav li:hover .subnav {
+    display: block
+}
+
+.left-nav .nav-arrow-down {
+    font-size: 13px
+}
+
+/* Nav-right */
+
+.right-nav-login {
+    float: right;
+    display: flex;
+    line-height: 74px;
+}
+.right-nav-login li {
+    padding: 0 20px;
+    list-style: none;
+    display: inline-block;
+
+}
+.right-nav-login li a, .right-nav-login li i {
+    color: rgb(247, 242, 242);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .right-nav-login li:hover, .right-nav-login li:hover{
+     background-color: #ccc; 
+} */
+
+.right-nav-login li:hover a, .right-nav-login li:hover i{
+    color: black;
+}
+
+/* content */
+.content {
+    margin-top: 74px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.second-nav {
+    height: 60px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+}
+
+.second-nav p {
+    text-align: center;
+    line-height: 60px;
+    font-family: sans-serif;
+    font-size: 8vh;
+    font-weight: 800;
+    color: #045694 ;
+}
+
+
+.third-nav-list {
+    list-style-type: none;
+    height: 70px;
+    display: inline-block;
+}
+
+.third-nav-list li {
+    display: inline-block;
+    line-height: 70px;
+    padding: 0 16px;
+    position: relative;
+}
+
+.third-nav-list li a {
+    text-decoration: none;
+    color: #000f2C;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.third-nav-list li a:hover {
+   color: #045694;
+}
+
+.sub-third-nav {
+    position: absolute;
+    width: 300px;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    display: none;
+}
+
+/* input */
+
+/* .example{
+    line-height: 60px;
+}
+
+.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+.example button:hover {
+    background: #0b7dda;
+  } */
+
+/* end input */
+
+.slide1 {
+    position: relative;
+    background: url('/assets/img/Covid-19/slide1.png') top center / cover no-repeat; 
+    padding-top: 50%;
+}
+
+.slide1-content {
+    position:absolute;
+    bottom: 51px;
+    width: 100%;
+    padding-left: 70px;
+}
+
+.slide1-subtitle{
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.slide1-title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 700;   
+}
+
+/* About Covid */
+
+.About-Covid
+{
+    padding: 0 70px;
+    margin: 50px 0 0 0;
+}
+
+.recommend {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+
+.chart {
+    padding-left: 30px;
+    width: 50%;
+    float: left;
+}
+
+.recommend-title {
+    font-family: sans-serif;
+    font-size: 33px;
+    color: #000f2C;
+    opacity: 85%;
+    font-weight: 700;
+}
+
+.recommend-desc {
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.chart-desc {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #000f2C;
+    opacity: 85%;
+    font-weight: 500;
+    padding-top: 7px;
+    font-weight: 700;
+}
+
+/*slide2 */
+
+.slide2 {
+    position: relative;
+    background: url('/assets/img/Covid-19/slide2.png') center/ cover no-repeat; 
+    padding-top: 40%;
+}
+
+.slide2-content{
+    width: 800px;
+    position: absolute;
+    bottom: 200px;
+    padding-left: 300px;
+}
+
+.slide2-subtitle {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.slide2-title {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.button  a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 137px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #045694;
+}
+
+.button  a:hover{
+    background-color: #2196F3;
+}
+
+
+
+
+/* content1 */
+
+.content1 {
+    padding: 96px 110px;
+
+}
+
+.resource-center {
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.campaign1{
+    display: flex;
+}
+
+.campaign-title {
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.campaign-desc {
+    line-height: 1.8;
+    font-family: sans-serif;
+    font-size: 20px;
+    opacity: 85%;
+}
+
+.campaign-button {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #1277d9;
+    font-weight: 700;
+}
+
+.campaign-button:hover {
+    color: #045694;
+}
+.campain2-text {
+    width: 33.33%;
+    float: left;
+}
+
+
+.footer {
+    display: flex;
+}
+
+.social li {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.social li  {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #242424;
+    margin-right: 10px;
+}
+
+.social li:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+.social li a {
+    line-height: 30px;
+    color: white;
+}
+.social li a:hover {
+    color: black;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    opacity: 85%;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
